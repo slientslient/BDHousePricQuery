@@ -66,7 +66,9 @@ Page({
     totalAreaArr:[],
     allyears:[],
     allmonths:[],
-    is_loading_pull:false
+    is_loading_pull:false,
+    dialogShow: false,
+    buttons: [ {text: '确定'}],
   },
 
   /**
@@ -314,22 +316,45 @@ onPullDownRefresh: function (){
   //跳转楼盘详情页面
   goToLpanDetail:function(e){
     console.log("e==",e.currentTarget.dataset.id)
-    let lp_id =  e.currentTarget.dataset.id
-   wx.navigateTo({
-     url: '/pages/lpdetail/lpdetail?id='+lp_id,
-   })
+    if(!app.globalData.isLogin){
+      this.setData({
+        dialogShow: true
+     })
+     
+    }else{
+      let lp_id =  e.currentTarget.dataset.id
+      wx.navigateTo({
+        url: '/pages/lpdetail/lpdetail?id='+lp_id
+      })
+    }
+   
   },
   //跳转到所有楼盘页面
   goToIndex:function(){
-    wx.navigateTo({
-      url: '/pages/index/index?area='+this.data.area_selected,
-    })
+    if(!app.globalData.isLogin){
+      this.setData({
+        dialogShow: true
+     })
+     
+    }else{
+      wx.navigateTo({
+        url: '/pages/index/index?area='+this.data.area_selected,
+      })
+    }
+    
   },
   //跳转到搜索楼盘页面
   goToSearch:function(){
+    if(!app.globalData.isLogin){
+      this.setData({
+        dialogShow: true
+     })
+     
+    }else{
     wx.navigateTo({
       url: '/pages/search/search',
     })
+  }
   },
     //获取新的楼盘数据
   getNewRegister:function(){
@@ -821,5 +846,15 @@ onPullDownRefresh: function (){
       title: '合肥新房备案价',
       path: '/pages/secondIndex/secondIndex'
      }
-  }
+  },
+  /*弹出框*/ 
+  tapDialogButton(e) {
+    this.setData({
+        dialogShow: false,
+    })
+     wx.navigateTo({
+              url: '/pages/login/login'
+            })
+      
+},
 })

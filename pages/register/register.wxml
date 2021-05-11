@@ -1,0 +1,36 @@
+<!--pages/register/register.wxml-->
+<view class="container">
+  <view class="user-reg-wp">
+    <image class="user-reg-icon" src="/image/user-reg-icon.png"></image>
+  </view>
+  <view class="jw-acc-wp" >
+    <image class="jw_acc-img" src="/image/user-icon.png"></image>
+    <input placeholder="请输入账号名" class="jw_input_id" placeholder-class="jw_ph_id" bindblur="getStNum"/>
+  </view>
+
+  <view class="jw-acc-wp-1" >
+    <image class="jw_acc-img" src="/image/email-icon.png"></image>
+    <input placeholder="请输入邮箱" class="jw_input_id" placeholder-class="jw_ph_id" bindblur="getStNum"/>
+  </view>
+
+  <view class="jw-acc-wp-1" >
+    <image class="jw_acc-img" src="/image/password-icon.png"></image>
+    <input placeholder="请输入密码" password="{{!isShowEye}}" class="jw_input_pw" placeholder-class="jw_ph_pw" bindblur="getStPw"/>
+    <view bindtap="showOrHidePw" class="show-eyes-wp"> 
+      <image class="show-eyes-image" src="{{isShowEye?'/image/show-eyes-icon.png':'/image/close-eyes-icon.png'}}" ></image>
+    </view>
+  </view>
+
+  <view class="jw-acc-wp-1" >
+    <image class="jw_acc-img" src="/image/password-icon.png"></image>
+    <input placeholder="请再次输入密码" password="{{!isShowEye}}" class="jw_input_pw" placeholder-class="jw_ph_pw" bindblur="getStPw"/>
+    <view bindtap="showOrHidePw" class="show-eyes-wp"> 
+      <image class="show-eyes-image" src="{{isShowEye?'/image/show-eyes-icon.png':'/image/close-eyes-icon.png'}}" ></image>
+    </view>
+  </view>
+
+ <view class="js_login_wp" bindtap="loginJw">
+        <text class="jw_login_txt_2">创建新账号</text>
+  </view>
+
+</view>

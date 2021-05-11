@@ -252,4 +252,9 @@
         <view class="weui-loading" style="width:60rpx;height:60rpx"></view>
     </view>
   </view>
+
+  <!--弹出框去登陆-->
+  <mp-dialog title="提示" show="{{dialogShow}}" bindbuttontap="tapDialogButton" buttons="{{buttons}}">
+        <view>账号未登录，请前往登陆</view>
+    </mp-dialog>
 </view>

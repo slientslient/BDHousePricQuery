@@ -1,6 +1,7 @@
 {
   "usingComponents": {
-    "ec-canvas":"/ec-canvas/ec-canvas"
+    "ec-canvas":"/ec-canvas/ec-canvas",
+    "mp-dialog": "/weui-miniprogram/dialog/dialog"
   },
   "enablePullDownRefresh": true
 }

@@ -1,17 +1,21 @@
 {
   "pages": [
+  
+    "pages/login/login",
     "pages/secondIndex/secondIndex",
     "pages/index/index",
     "pages/logs/logs",
     "pages/search/search",
     "pages/lddetail/lddetail",
-    "pages/lpdetail/lpdetail"
-   
+    "pages/lpdetail/lpdetail",
+    "pages/findPassword/findPassword",
+    "pages/register/register"
+    
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "庐州居不易",
+    "navigationBarTitleText": "合肥新房价格",
     "navigationBarTextStyle": "black",
     "onReachBottomDistance": 200
   },

@@ -1,0 +1,45 @@
+<!--pages/jwlogin/login.wxml-->
+<view class="container">
+ <view class="jw_login_head">
+   <!-- <image class="school_badge_icon" src="/image/price_icon.png"></image> -->
+   <view class="school_name_wp">
+     <text class="jw_login_txt">合肥新房备案价格查询系统</text>
+     <text class="jw_login_txt_1">New House Record Price Inquiry System Of Hefei</text>
+   </view>
+ </view>
+ <view class="jw_login_wp"> 
+</view>
+   <view class="jw-acc-wp">
+    <image class="jw_acc-img" src="/image/user-icon.png"></image>
+    <input placeholder="请输入账号" class="jw_input_id" placeholder-class="jw_ph_id" bindblur="getStNum"/>
+  </view>
+  <view class="jw-acc-wp-1" >
+    <image class="jw_acc-img" src="/image/password-icon.png"></image>
+    <input placeholder="请输入密码" password="{{!isShowEye}}" class="jw_input_pw" placeholder-class="jw_ph_pw" bindblur="getStPw"/>
+    <view bindtap="showOrHidePw" class="show-eyes-wp"> 
+      <image class="show-eyes-image" src="{{isShowEye?'/image/show-eyes-icon.png':'/image/close-eyes-icon.png'}}" ></image>
+    </view>
+    
+  </view>
+
+ <view class="js_login_wp" bindtap="loginJw">
+        <text class="jw_login_txt_2">登录</text>
+  </view>
+ <view class="jw_find_pw-wp">
+      <!-- <text class="jw_find_pw">找回密码</text> -->
+      <view class="reg_wp" bindtap="goToFindPW">
+        <text class="jw_ph_pw">忘记密码?</text>
+      </view>
+      <view class="reg_wp" bindtap="goToRegister">
+        <text class="find-pw">注册新账户</text>
+      </view>
+ </view>
+
+ <!-- <view class="flex-row jw_footer" style="margin-top:100rpx;">
+   <text class="jw_footer_txt">电话：0551-63602393</text>
+   <text class="jw_footer_txt" style="margin-left:40rpx">邮箱：urp@ustc.edu.cn</text>
+ </view>-->
+ <view class=" jw_footer" style="margin-top:10rpx;" bindtap="goToIndex">
+    <text class="jw_ph_pw">跳过登陆</text>
+ </view> 
+</view>

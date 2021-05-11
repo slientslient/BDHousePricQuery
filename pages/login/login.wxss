@@ -1,0 +1,143 @@
+/* pages/jwlogin/login.wxss */
+.jw_login_head{
+  margin-top:160rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width:100%;
+}
+.school_badge_icon{
+ width:100rpx;
+ height:100rpx;
+}
+.school_name_wp{
+ display: flex;
+ flex-direction: column;
+ justify-content:flex-start;
+ align-items:center;
+}
+.jw_login_txt{
+  font-family: FZShuTi;
+  font-size: 45rpx;
+  color:#0061b0;
+}
+.jw_login_txt_1{
+  font-family: FZShuTi;
+  font-size: 23rpx;
+  color:#0061b0;
+}
+.jw_login_wp{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:100%;
+  margin-top:100rpx;
+}
+.jw_login_text{
+   margin-top:20rpx;
+   font-size: 28rpx;
+   color:black;
+}
+.jw_input_id{
+   width: 80%; 
+  font-size: 30rpx;
+  color:#333333;
+  margin-left:10rpx;
+}
+.jw_ph_id{
+ font-size: 30rpx;
+ color:#8a8a8a;
+}
+.jw_input_pw{
+   width: 80%; 
+  font-size: 30rpx;
+  color:#333333;
+  margin-left:10rpx;
+}
+.jw_ph_pw{
+  font-size: 30rpx;
+  color:#8a8a8a;
+}
+.jw_find_pw-wp{
+  width:74%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; 
+}
+.find-pw{
+  font-size: 30rpx;
+  color:#333333;
+}
+.jw_find_pw{
+  font-size: 24rpx;
+  color:#333333;
+}
+.js_login_wp{
+  display:flex;
+  flex-direction:row;
+  height:80rpx;
+  border-radius: 15rpx;
+  width:70%;
+  /* margin-left:30rpx; */
+  align-items: center;
+  justify-content: center;
+  background-color: #0061b0;
+  margin-top:50rpx;
+}
+.jw-acc-wp{
+  display:flex;
+  flex-direction:row;
+  /* justify-content: center; */
+  align-items:center;
+  width:70%;
+  border-bottom: 1px solid #0061b0;
+  height:60rpx;
+  margin:0 10rpx;
+}
+.jw-acc-wp-1{
+  position:relative;
+  display:flex;
+  flex-direction:row;
+  /* justify-content: center; */
+  align-items:center;
+  width:70%;
+  border-bottom: 1px solid #0061b0;
+  height:60rpx;
+  margin:0 10rpx;
+  margin-top:40rpx;
+}
+.show-eyes-wp{
+  position:absolute;
+  right:20rpx;
+  bottom:1rpx;
+}
+.show-eyes-image{
+  width:30rpx;
+  height:30rpx;
+}
+.jw_acc-img{
+  margin-left:15rpx;
+  width:30rpx;
+  height:30rpx;
+}
+.reg_wp{
+  display:flex;
+  flex-direction: row;
+  margin-top:20rpx;
+  /* margin-right:60rpx; */
+}
+.jw_login_txt_2{
+  font-size: 32rpx;
+  color: white;
+}
+.jw_footer{
+  position:fixed;
+  bottom: 60rpx;
+  left:320rpx;
+}
+.jw_footer_txt{
+  font-size: 32rpx;
+  color: #333333;
+}
